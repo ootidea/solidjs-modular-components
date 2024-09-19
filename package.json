@@ -5,6 +5,15 @@
   "keywords": [],
   "license": "CC0-1.0",
   "author": "",
-  "scripts": {},
+  "scripts": {
+    "fix": "run-p \"fix:*\"",
+    "fix:biome": "biome check --write",
+    "fix:package-json": "sort-package-json"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.2",
+    "npm-run-all2": "^6.2.3",
+    "sort-package-json": "^2.10.1"
+  },
   "packageManager": "pnpm@9.10.0"
 }
