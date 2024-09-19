@@ -5,5 +5,6 @@
   "keywords": [],
   "license": "CC0-1.0",
   "author": "",
-  "scripts": {}
+  "scripts": {},
+  "packageManager": "pnpm@9.10.0"
 }
