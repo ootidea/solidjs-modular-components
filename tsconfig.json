@@ -6,7 +6,11 @@
     "moduleResolution": "bundler",
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
-    "noErrorTruncation": true
+    "noErrorTruncation": true,
+    "types": ["vinxi/types/client"],
+    "paths": {
+      "~/*": ["./src/*"]
+    }
   },
   "include": ["src"]
 }

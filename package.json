@@ -5,9 +5,12 @@
   "keywords": [],
   "license": "CC0-1.0",
   "author": "",
+  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "vinxi dev",
+    "build": "vinxi build",
+    "start": "vinxi start",
+    "version": "vinxi version",
     "fix": "run-p \"fix:*\"",
     "fix:biome": "biome check --write",
     "fix:package-json": "sort-package-json",
@@ -15,15 +18,22 @@
     "check:type": "tsc --noEmit",
     "check:biome": "biome check"
   },
+  "dependencies": {
+    "@solidjs/meta": "^0.29.4",
+    "@solidjs/router": "^0.14.1",
+    "@solidjs/start": "^1.0.6",
+    "solid-js": "^1.8.18",
+    "vinxi": "^0.4.1"
+  },
   "devDependencies": {
     "@biomejs/biome": "^1.9.2",
     "@tsconfig/strictest": "^2.0.5",
     "npm-run-all2": "^6.2.3",
-    "solid-js": "^1.8.22",
     "sort-package-json": "^2.10.1",
-    "typescript": "^5.6.2",
-    "vite": "^5.4.6",
-    "vite-plugin-solid": "^2.10.2"
+    "typescript": "^5.6.2"
   },
-  "packageManager": "pnpm@9.10.0"
+  "packageManager": "pnpm@9.10.0",
+  "engines": {
+    "node": ">=18"
+  }
 }
