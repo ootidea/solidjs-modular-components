@@ -4,6 +4,8 @@
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "bundler",
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
     "noErrorTruncation": true
   },
   "include": ["src"]
