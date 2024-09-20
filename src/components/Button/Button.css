@@ -1,0 +1,34 @@
+:root {
+  --solid-design-parts-primary-color: oklch(59% 0.17 255.4);
+  --solid-design-parts-error-color: oklch(55% 0.19 30);
+  --solid-design-parts-inverted-text-color: oklch(100% 0 0);
+}
+
+.solid-general-components-Button_root {
+  background-color: var(--solid-design-parts-Button-background-color);
+  color: var(--solid-design-parts-inverted-text-color);
+  border: none;
+  padding: 0.3em 0.6em;
+  border-radius: 0.4em;
+  font: inherit;
+  cursor: pointer;
+
+  &[data-solid-general-components-color="primary"] {
+    --solid-design-parts-Button-background-color: var(--solid-design-parts-primary-color);
+  }
+  &[data-solid-general-components-color="achromatic"] {
+    --solid-design-parts-Button-background-color: oklch(from var(--solid-design-parts-primary-color) l 0 h);
+  }
+  &[data-solid-general-components-color="error"] {
+    --solid-design-parts-Button-background-color: var(--solid-design-parts-error-color);
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: oklch(from var(--solid-design-parts-Button-background-color) calc(l - 0.05) c h);
+    }
+  }
+  &:active {
+    background-color: oklch(from var(--solid-design-parts-Button-background-color) calc(l - 0.1) c h);
+  }
+}

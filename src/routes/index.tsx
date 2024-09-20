@@ -1,19 +1,11 @@
-import { Title } from '@solidjs/meta'
-import Counter from '~/components/Counter'
+import { Button } from '~/components/Button/Button'
 
 export default function Home() {
   return (
     <main>
-      <Title>Hello World</Title>
-      <h1>Hello world!</h1>
-      <Counter />
-      <p>
-        Visit{' '}
-        <a href="https://start.solidjs.com" target="_blank" rel="noreferrer">
-          start.solidjs.com
-        </a>{' '}
-        to learn how to build SolidStart apps.
-      </p>
+      <Button />
+      <Button color="achromatic" />
+      <Button color="error" />
     </main>
   )
 }
