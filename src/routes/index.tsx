@@ -1,11 +1,6 @@
-import { Button } from '~/components/Button/Button'
+import { Navigate } from '@solidjs/router'
 
-export default function Home() {
-  return (
-    <main>
-      <Button />
-      <Button color="achromatic" />
-      <Button color="error" />
-    </main>
-  )
+export default function RootPage() {
+  // TODO: Temporary redirect in place. Implement proper root page and remove this redirect.
+  return <Navigate href="/components/Button" />
 }

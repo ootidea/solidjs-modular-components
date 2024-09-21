@@ -1,7 +1,9 @@
 import './Button.css'
+import type { JSX } from 'solid-js'
 
 export type ButtonProps = {
   color?: 'primary' | 'achromatic' | 'error'
+  children?: JSX.Element
 }
 
 export function Button(props: ButtonProps) {
@@ -11,7 +13,7 @@ export function Button(props: ButtonProps) {
       type="button"
       data-solid-general-components-color={props.color ?? 'primary'}
     >
-      Button
+      {props.children}
     </button>
   )
 }
