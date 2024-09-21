@@ -15,7 +15,16 @@ export default function Modal(props: ModalProps) {
     <>
       {props?.trigger?.(() => dialogElement?.showModal())}
 
-      <dialog class="solid-general-components-Modal_root" ref={dialogElement}>
+      <dialog
+        class="solid-general-components-Modal_root"
+        ref={dialogElement}
+        onClick={(event) => {
+          const { left, right, top, bottom } = event.target.getBoundingClientRect()
+          if (event.clientX < left || right < event.clientX || event.clientY < top || bottom < event.clientY) {
+            dialogElement?.close()
+          }
+        }}
+      >
         {typeof props.children === 'function' ? props.children(() => dialogElement?.close()) : props.children}
       </dialog>
     </>

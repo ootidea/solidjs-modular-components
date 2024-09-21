@@ -16,6 +16,9 @@
     "check:type": "tsc --noEmit",
     "check:biome": "biome check"
   },
+  "dependencies": {
+    "solid-signal-object": "^1.1.1"
+  },
   "devDependencies": {
     "@biomejs/biome": "^1.9.2",
     "@solidjs/meta": "^0.29.4",

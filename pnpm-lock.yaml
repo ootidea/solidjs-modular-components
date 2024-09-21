@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      solid-signal-object:
+        specifier: ^1.1.1
+        version: 1.1.1(solid-js@1.8.22)
     devDependencies:
       '@biomejs/biome':
         specifier: ^1.9.2
@@ -2207,6 +2211,11 @@ packages:
     resolution: {integrity: sha512-F3aPsX6hVw9ttm5LYlth8Q15x6MlI/J3Dn+o3EQyRTtTxidepSTwAYdozt01/YA+7ObcciagGEyXIopGZzQtbA==}
     peerDependencies:
       solid-js: ^1.3
+
+  solid-signal-object@1.1.1:
+    resolution: {integrity: sha512-dTeSkbKOyQtvYEpF4KIG94U7nW5YWoUlX0vMQ2IQKouKRLWkbV+mn6GAsDVyMfiqKbSsyuXurbXDEECbyC1GbA==}
+    peerDependencies:
+      solid-js: '>=1.0.0'
 
   solid-use@0.9.0:
     resolution: {integrity: sha512-8TGwB4m3qQ7qKo8Lg0pi/ZyyGVmQIjC4sPyxRCH7VPds0BzSsT734PhP3jhR6zMJxoYHM+uoivjq0XdpzXeOJg==}
@@ -4767,6 +4776,10 @@ snapshots:
       solid-js: 1.8.22
     transitivePeerDependencies:
       - supports-color
+
+  solid-signal-object@1.1.1(solid-js@1.8.22):
+    dependencies:
+      solid-js: 1.8.22
 
   solid-use@0.9.0(solid-js@1.8.22):
     dependencies:
