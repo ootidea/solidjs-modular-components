@@ -5,6 +5,7 @@ export default function ButtonPage() {
   return (
     <>
       <h1>Button</h1>
+
       <h2>Colors</h2>
       <PreviewArea>
         <Button>Primary</Button>
