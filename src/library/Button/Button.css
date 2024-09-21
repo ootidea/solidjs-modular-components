@@ -1,4 +1,5 @@
 .solid-general-components-Button_root {
+  box-sizing: border-box;
   background-color: var(--solid-design-parts-Button-background-color);
   color: var(--solid-design-parts-inverted-text-color);
   border: none;
