@@ -1,6 +1,8 @@
 import type { JSX } from 'solid-js'
-import '../common.css'
 import './Modal.css'
+import { loadCommonCss } from '~/library/loadCommonCss'
+
+loadCommonCss()
 
 export type ModalProps = {
   trigger?: (open: () => void) => JSX.Element

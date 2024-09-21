@@ -7,7 +7,7 @@
   "author": "",
   "type": "module",
   "scripts": {
-    "dev-website": "vinxi dev",
+    "dev": "vinxi dev",
     "build-website": "vinxi build",
     "fix": "run-p \"fix:*\"",
     "fix:biome": "biome check --write",

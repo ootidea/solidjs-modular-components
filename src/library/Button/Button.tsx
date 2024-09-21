@@ -1,6 +1,8 @@
-import '../common.css'
-import './Button.css'
 import type { JSX } from 'solid-js'
+import './Button.css'
+import { loadCommonCss } from '~/library/loadCommonCss'
+
+loadCommonCss()
 
 export type ButtonProps = {
   color?: 'primary' | 'achromatic' | 'error'

@@ -1,21 +1,17 @@
 .solid-general-components-Modal_root {
-  width: max-content;
+  width: fit-content;
   max-width: unset;
-  height: unset;
+  height: fit-content;
   max-height: unset;
   padding: 2.5em;
-  color: unset;
-  background-color: var(--solid-design-parts-background-color);
-  border: unset;
-  overflow: unset;
 
+  border: unset;
+  box-shadow: 0 0 0.5em 0.1em oklch(0 0 0 / 10%);
   border-radius: 0.4em;
 
-  position: fixed;
-  inset-block-start: unset;
-  inset-block-end: unset;
-
-  box-shadow: 0 0 0.5em 0.1em rgba(0, 0, 0, 0.1);
+  color: unset;
+  background-color: var(--solid-design-parts-background-color);
+  overflow: unset;
 
   &::backdrop {
     background-color: rgba(0, 0, 0, 0.05);

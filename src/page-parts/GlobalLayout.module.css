@@ -1,12 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
 .root {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 3em;
 }
 
 .sidebar {
+  position: sticky;
+  top: 0;
+
+  width: max-content;
+  min-width: 10em;
+  height: 100svh;
+  padding: 2em;
+
   display: flex;
   flex-direction: column;
   gap: 1em;
-  width: max-content;
+
+  border-right: 1px solid oklch(90% 0 0);
+}
+
+.main {
+  padding: 2em 6em;
 }

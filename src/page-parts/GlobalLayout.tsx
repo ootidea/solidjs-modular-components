@@ -9,11 +9,10 @@ export function GlobalLayout(props: RouteSectionProps<unknown>) {
       <Title>solid-general-components</Title>
       <div class={classes.root}>
         <aside class={classes.sidebar}>
-          <a href="/">solid-general-components</a>
           <a href="/components/Button">Button</a>
           <a href="/components/Modal">Modal</a>
         </aside>
-        <main>
+        <main class={classes.main}>
           <Suspense>{props.children}</Suspense>
         </main>
       </div>
