@@ -9,7 +9,7 @@
     font: inherit;
 
     &:focus-visible {
-      outline: 1px solid var(--solid-design-parts-primary-color);
+      outline: 1px solid var(--solid-general-components-primary-color);
     }
   }
 }

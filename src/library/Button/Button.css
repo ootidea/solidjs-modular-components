@@ -4,28 +4,30 @@
     padding: 0.3em 0.6em;
     border: none;
     border-radius: 0.4em;
-    background-color: var(--solid-design-parts-Button-background-color);
-    color: var(--solid-design-parts-inverted-text-color);
+    background-color: var(--solid-general-components-Button-background-color);
+    color: var(--solid-general-components-inverted-text-color);
     font: inherit;
     cursor: pointer;
 
     &[data-solid-general-components-color="primary"] {
-      --solid-design-parts-Button-background-color: var(--solid-design-parts-primary-color);
+      --solid-general-components-Button-background-color: var(--solid-general-components-primary-color);
     }
     &[data-solid-general-components-color="achromatic"] {
-      --solid-design-parts-Button-background-color: oklch(from var(--solid-design-parts-primary-color) l 0 h);
+      --solid-general-components-Button-background-color: oklch(
+        from var(--solid-general-components-primary-color) l 0 h
+      );
     }
     &[data-solid-general-components-color="error"] {
-      --solid-design-parts-Button-background-color: var(--solid-design-parts-error-color);
+      --solid-general-components-Button-background-color: var(--solid-general-components-error-color);
     }
 
     @media (any-hover: hover) {
       &:hover {
-        background-color: oklch(from var(--solid-design-parts-Button-background-color) calc(l - 0.05) c h);
+        background-color: oklch(from var(--solid-general-components-Button-background-color) calc(l - 0.05) c h);
       }
     }
     &:active {
-      background-color: oklch(from var(--solid-design-parts-Button-background-color) calc(l - 0.1) c h);
+      background-color: oklch(from var(--solid-general-components-Button-background-color) calc(l - 0.1) c h);
     }
   }
 }
