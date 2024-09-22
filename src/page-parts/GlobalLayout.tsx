@@ -1,12 +1,13 @@
 import { MetaProvider, Title } from '@solidjs/meta'
-import type { RouteSectionProps } from '@solidjs/router'
+import { type RouteSectionProps, useLocation } from '@solidjs/router'
 import { Suspense } from 'solid-js'
 import classes from './GlobalLayout.module.css'
 
 export function GlobalLayout(props: RouteSectionProps<unknown>) {
+  const location = useLocation()
   return (
     <MetaProvider>
-      <Title>solid-general-components</Title>
+      <Title>{location.pathname.split('/').pop()} | solid-general-components</Title>
       <div class={classes.root}>
         <aside class={classes.sidebar}>
           <a href="/components/Button">Button</a>
