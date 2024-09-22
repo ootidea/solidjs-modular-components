@@ -14,6 +14,7 @@ export function Icon(props: IconProps) {
         '--solid-general-components-Icon_url': `url('${props.url}')`,
         '--solid-general-components-Icon_size': props.size ?? '1.5em',
       }}
+      role="img"
     />
   )
 }

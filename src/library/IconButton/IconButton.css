@@ -1,0 +1,23 @@
+@layer solid-general-components {
+  .solid-general-components-IconButton_root {
+    width: var(--solid-general-components-IconButton_size);
+    height: var(--solid-general-components-IconButton_size);
+    padding: 0.4em;
+    border: none;
+    border-radius: 9999vmax;
+    background-color: oklch(0% 0 0 / 0%);
+
+    &:not(:disabled) {
+      cursor: pointer;
+
+      @media (any-hover: hover) {
+        &:hover {
+          background-color: oklch(0% 0 0 / 5%);
+        }
+      }
+      &:active {
+        background-color: oklch(0% 0 0 / 10%);
+      }
+    }
+  }
+}

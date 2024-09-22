@@ -15,6 +15,7 @@ export function GlobalLayout(props: RouteSectionProps<unknown>) {
           <SidebarMenu>Modal</SidebarMenu>
           <SidebarMenu>NumberInput</SidebarMenu>
           <SidebarMenu>Icon</SidebarMenu>
+          <SidebarMenu>IconButton</SidebarMenu>
         </aside>
         <main class={classes.main}>
           <Suspense>{props.children}</Suspense>
