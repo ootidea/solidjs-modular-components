@@ -1,6 +1,8 @@
 import type { JSX } from 'solid-js'
 import './Modal.css'
 import '../common.css'
+import { Icon } from '../Icon/Icon'
+import closeIcon from '../icons/close.svg'
 
 export type ModalProps = {
   trigger?: (open: () => void) => JSX.Element
@@ -23,6 +25,7 @@ export function Modal(props: ModalProps) {
           }
         }}
       >
+        <Icon url={closeIcon} />
         {typeof props.children === 'function' ? props.children(() => dialogElement?.close()) : props.children}
       </dialog>
     </>

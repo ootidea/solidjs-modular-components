@@ -12,6 +12,7 @@ export function GlobalLayout(props: RouteSectionProps<unknown>) {
           <a href="/components/Button">Button</a>
           <a href="/components/Modal">Modal</a>
           <a href="/components/NumberInput">NumberInput</a>
+          <a href="/components/Icon">Icon</a>
         </aside>
         <main class={classes.main}>
           <Suspense>{props.children}</Suspense>
