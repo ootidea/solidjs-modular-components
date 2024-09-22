@@ -1,21 +1,19 @@
 .solid-general-components-Modal_root {
   box-sizing: border-box;
   position: fixed;
-  inset: 0;
   width: fit-content;
   max-width: 100dvw;
   height: fit-content;
   max-height: 100dvh;
   margin: auto;
+  inset: 0;
   padding: 2.5em;
-  
-  border-radius: 0.4em;
-  border: unset;
-  box-shadow: 0 2px 5px oklch(0 0 0 / 20%);
-
-  background-color: var(--solid-design-parts-background-color);
-  color: unset;
   overflow: unset;
+  border: unset;
+  border-radius: 0.4em;
+  background-color: var(--solid-design-parts-background-color);
+  box-shadow: 0 2px 5px oklch(0 0 0 / 20%);
+  color: unset;
   
   &::backdrop {
     background-color: rgba(0 0 0 / 3%);
@@ -24,9 +22,9 @@
   &,
   &::backdrop {
     opacity: 0;
+    transition-behavior: allow-discrete;
     transition-duration: 300ms;
     transition-property: opacity, overlay, display;
-    transition-behavior: allow-discrete;
   }
 
   &:modal {

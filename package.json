@@ -12,6 +12,7 @@
     "fix": "run-p \"fix:*\"",
     "fix:biome": "biome check --write",
     "fix:package-json": "sort-package-json",
+    "fix:css-order": "postcss src/**/*.css --replace --no-map",
     "check": "run-p \"check:*\"",
     "check:type": "tsc --noEmit",
     "check:biome": "biome check"
@@ -25,7 +26,9 @@
     "@solidjs/router": "^0.14.1",
     "@solidjs/start": "^1.0.6",
     "@tsconfig/strictest": "^2.0.5",
+    "css-declaration-sorter": "^7.2.0",
     "npm-run-all2": "^6.2.3",
+    "postcss-cli": "^11.0.0",
     "solid-js": "^1.8.18",
     "sort-package-json": "^2.10.1",
     "typescript": "^5.6.2",
