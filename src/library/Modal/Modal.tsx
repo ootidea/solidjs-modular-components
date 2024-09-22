@@ -1,16 +1,18 @@
 import type { JSX } from 'solid-js'
 import './Modal.css'
 import '../common.css'
-import { Icon } from '../Icon/Icon'
+import { Icon } from '~/library'
+import { IconButton } from '~/library/IconButton/IconButton'
 import closeIcon from '../icons/close.svg'
 
 export type ModalProps = {
+  showCloseButton?: boolean
   trigger?: (open: () => void) => JSX.Element
   children?: JSX.Element | ((close: () => void) => JSX.Element)
 }
 export function Modal(props: ModalProps) {
   let dialogElement: HTMLDialogElement | undefined
-
+  const closeModal = () => dialogElement?.close()
   return (
     <>
       {props?.trigger?.(() => dialogElement?.showModal())}
@@ -21,12 +23,18 @@ export function Modal(props: ModalProps) {
         onClick={(event) => {
           const { left, right, top, bottom } = event.target.getBoundingClientRect()
           if (event.clientX < left || right < event.clientX || event.clientY < top || bottom < event.clientY) {
-            dialogElement?.close()
+            closeModal()
           }
         }}
       >
-        <Icon url={closeIcon} />
-        {typeof props.children === 'function' ? props.children(() => dialogElement?.close()) : props.children}
+        <div class="solid-general-components-Modal_titleBar">
+          {props.showCloseButton && (
+            <IconButton class="solid-general-components-Modal_closeButton" onClick={closeModal}>
+              <Icon url={closeIcon} />
+            </IconButton>
+          )}
+        </div>
+        {typeof props.children === 'function' ? props.children(closeModal) : props.children}
       </dialog>
     </>
   )

@@ -5,7 +5,7 @@ import '../common.css'
 export type ButtonProps = {
   color?: 'primary' | 'achromatic' | 'error'
   disabled?: boolean
-  onClick?: () => unknown
+  onClick?: (event: MouseEvent) => unknown
   children?: JSX.Element
 }
 

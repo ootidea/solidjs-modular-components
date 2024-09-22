@@ -4,10 +4,11 @@
     box-sizing: border-box;
     width: fit-content;
     max-width: 100dvw;
+    min-width: 10em;
     height: fit-content;
     max-height: 100dvh;
     margin: auto;
-    padding: 2.5em;
+    padding: 0;
     overflow: unset;
     border: unset;
     border-radius: 0.4em;
@@ -41,5 +42,18 @@
         }
       }
     }
+  }
+  
+  .solid-general-components-Modal_titleBar {
+    display: flex;
+    align-items: center;
+    
+    &:not(:empty) {
+      padding: 0.3em 0.3em 0;
+    }
+  }
+  
+  .solid-general-components-Modal_closeButton {
+    margin-left: auto;
   }
 }

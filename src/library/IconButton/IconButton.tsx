@@ -1,14 +1,17 @@
 import './IconButton.css'
 import '../common.css'
-import type { JSX } from 'solid-js'
+import type { ComponentProps } from 'solid-js'
+import { mergeClass } from '~/library/utilities'
 
-export type IconButtonProps = {
-  children?: JSX.Element
-}
+export type IconButtonProps = ComponentProps<'button'>
 
 export function IconButton(props: IconButtonProps) {
   return (
-    <button class="solid-general-components-IconButton_root" type="button">
+    <button
+      {...props}
+      class={mergeClass('solid-general-components-IconButton_root', props)}
+      type={props.type ?? 'button'}
+    >
       {props.children}
     </button>
   )
