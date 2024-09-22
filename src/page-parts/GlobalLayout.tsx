@@ -10,13 +10,13 @@ export function GlobalLayout(props: RouteSectionProps<unknown>) {
     <MetaProvider>
       <Title>{location.pathname.split('/').pop()} | solid-general-components</Title>
       <div class={classes.root}>
-        <aside class={classes.sidebar}>
+        <nav class={classes.sidebar}>
           <SidebarMenu>Button</SidebarMenu>
           <SidebarMenu>Modal</SidebarMenu>
           <SidebarMenu>NumberInput</SidebarMenu>
           <SidebarMenu>Icon</SidebarMenu>
           <SidebarMenu>IconButton</SidebarMenu>
-        </aside>
+        </nav>
         <main class={classes.main}>
           <Suspense>{props.children}</Suspense>
         </main>

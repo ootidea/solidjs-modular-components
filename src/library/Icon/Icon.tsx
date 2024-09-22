@@ -11,7 +11,7 @@ export function Icon(props: IconProps) {
     <div
       class="solid-general-components-Icon_root"
       style={{
-        '--solid-general-components-Icon_url': `url('${props.url}')`,
+        '--solid-general-components-Icon_url': `url('${props.url.replaceAll("'", '"')}')`,
         '--solid-general-components-Icon_size': props.size ?? '1.5em',
       }}
       role="img"
