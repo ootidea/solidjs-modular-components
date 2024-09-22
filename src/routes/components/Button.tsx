@@ -1,12 +1,12 @@
 import { Button } from '~/library/Button/Button'
+import { PageTitle } from '~/page-parts/PageTitle'
 import { PreviewArea } from '~/page-parts/PreviewArea'
 import { SectionTitle } from '~/page-parts/SectionTitle'
 
 export default function Page() {
   return (
     <>
-      <h1>Button</h1>
-
+      <PageTitle>Button</PageTitle>
       <SectionTitle>Colors</SectionTitle>
       <PreviewArea>
         <Button>Primary</Button>

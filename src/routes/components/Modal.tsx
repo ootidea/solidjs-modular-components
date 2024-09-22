@@ -1,12 +1,13 @@
 import { Button } from '~/library/Button/Button'
 import { Modal } from '~/library/Modal/Modal'
+import { PageTitle } from '~/page-parts/PageTitle'
 import { PreviewArea } from '~/page-parts/PreviewArea'
 import { SectionTitle } from '~/page-parts/SectionTitle'
 
 export default function Page() {
   return (
     <>
-      <h1>Modal</h1>
+      <PageTitle>Modal</PageTitle>
       <SectionTitle>Open/Close Modal by triggers</SectionTitle>
       <PreviewArea>
         <Modal trigger={(open) => <Button onClick={open}>open</Button>}>
