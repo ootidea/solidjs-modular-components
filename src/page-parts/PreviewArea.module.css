@@ -11,6 +11,4 @@
     grid-auto-flow: column;
     justify-content: start;
   }
-  &[data-direction="vertical"] {
-  }
 }
