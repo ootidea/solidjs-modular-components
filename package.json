@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "vinxi dev --port 3491",
     "build-website": "vinxi build",
+    "build": "vite build",
     "fix": "run-p \"fix:*\"",
     "fix:biome": "biome check --write",
     "fix:package-json": "sort-package-json",
@@ -33,7 +34,8 @@
     "stylelint": "^16.9.0",
     "stylelint-config-property-sort-order-smacss": "^10.0.0",
     "typescript": "^5.6.2",
-    "vinxi": "^0.4.1"
+    "vinxi": "^0.4.1",
+    "vite": "^5.4.7"
   },
   "packageManager": "pnpm@9.10.0",
   "engines": {
