@@ -8,7 +8,7 @@ export type ModalProps = {
   trigger?: (open: () => void) => JSX.Element
   children?: JSX.Element | ((close: () => void) => JSX.Element)
 }
-export default function Modal(props: ModalProps) {
+export function Modal(props: ModalProps) {
   let dialogElement: HTMLDialogElement | undefined
 
   return (

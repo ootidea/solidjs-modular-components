@@ -1,5 +1,5 @@
 import { Button } from '~/library/Button/Button'
-import Modal from '~/library/Modal/Modal'
+import { Modal } from '~/library/Modal/Modal'
 import { PreviewArea } from '~/page-parts/PreviewArea'
 import { SectionTitle } from '~/page-parts/SectionTitle'
 
