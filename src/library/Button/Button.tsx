@@ -4,6 +4,7 @@ import '../common.css'
 
 export type ButtonProps = {
   color?: 'primary' | 'achromatic' | 'error'
+  disabled?: boolean
   onClick?: () => unknown
   children?: JSX.Element
 }
@@ -13,6 +14,7 @@ export function Button(props: ButtonProps) {
     <button
       class="solid-general-components-Button_root"
       type="button"
+      disabled={props.disabled}
       data-solid-general-components-color={props.color ?? 'primary'}
       onClick={props.onClick}
     >

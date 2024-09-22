@@ -1,13 +1,12 @@
 @layer solid-general-components {
   .solid-general-components-Button_root {
     box-sizing: border-box;
-    padding: 0.3em 0.6em;
+    padding: 0.4em 0.9em;
     border: none;
     border-radius: 0.4em;
     background-color: var(--solid-general-components-Button-background-color);
     color: var(--solid-general-components-inverted-text-color);
     font: inherit;
-    cursor: pointer;
 
     &[data-solid-general-components-color="primary"] {
       --solid-general-components-Button-background-color: var(--solid-general-components-primary-color);
@@ -21,13 +20,23 @@
       --solid-general-components-Button-background-color: var(--solid-general-components-error-color);
     }
 
-    @media (any-hover: hover) {
-      &:hover {
-        background-color: oklch(from var(--solid-general-components-Button-background-color) calc(l - 0.05) c h);
-      }
+    &:disabled {
+      background-color: oklch(from var(--solid-general-components-Button-background-color) 97% calc(c * 0.025) h);
+      color: oklch(85% 0 0);
+
+      cursor: not-allowed;
     }
-    &:active {
-      background-color: oklch(from var(--solid-general-components-Button-background-color) calc(l - 0.1) c h);
+    &:not(:disabled) {
+      cursor: pointer;
+
+      @media (any-hover: hover) {
+        &:hover {
+          background-color: oklch(from var(--solid-general-components-Button-background-color) calc(l - 0.05) c h);
+        }
+      }
+      &:active {
+        background-color: oklch(from var(--solid-general-components-Button-background-color) calc(l - 0.1) c h);
+      }
     }
   }
 }

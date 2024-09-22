@@ -13,6 +13,17 @@ export default function Page() {
         <Button color="achromatic">Achromatic</Button>
         <Button color="error">Error</Button>
       </PreviewArea>
+
+      <SectionTitle>Disabled</SectionTitle>
+      <PreviewArea>
+        <Button disabled>Primary</Button>
+        <Button color="achromatic" disabled>
+          Achromatic
+        </Button>
+        <Button color="error" disabled>
+          Error
+        </Button>
+      </PreviewArea>
     </>
   )
 }
