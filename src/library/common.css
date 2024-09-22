@@ -1,7 +1,9 @@
-:root {
-  --solid-design-parts-primary-color: oklch(59% 0.17 255.4);
-  --solid-design-parts-error-color: oklch(55% 0.19 30);
+@layer solid-general-components {
+  :root {
+    --solid-design-parts-primary-color: oklch(59% 0.17 255.4);
+    --solid-design-parts-error-color: oklch(55% 0.19 30);
 
-  --solid-design-parts-inverted-text-color: oklch(100% 0 0);
-  --solid-design-parts-background-color: oklch(100% 0 0);
+    --solid-design-parts-inverted-text-color: oklch(100% 0 0);
+    --solid-design-parts-background-color: oklch(100% 0 0);
+  }
 }

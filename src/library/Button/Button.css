@@ -1,29 +1,31 @@
-.solid-general-components-Button_root {
-  box-sizing: border-box;
-  padding: 0.3em 0.6em;
-  border: none;
-  border-radius: 0.4em;
-  background-color: var(--solid-design-parts-Button-background-color);
-  color: var(--solid-design-parts-inverted-text-color);
-  font: inherit;
-  cursor: pointer;
+@layer solid-general-components {
+  .solid-general-components-Button_root {
+    box-sizing: border-box;
+    padding: 0.3em 0.6em;
+    border: none;
+    border-radius: 0.4em;
+    background-color: var(--solid-design-parts-Button-background-color);
+    color: var(--solid-design-parts-inverted-text-color);
+    font: inherit;
+    cursor: pointer;
 
-  &[data-solid-general-components-color="primary"] {
-    --solid-design-parts-Button-background-color: var(--solid-design-parts-primary-color);
-  }
-  &[data-solid-general-components-color="achromatic"] {
-    --solid-design-parts-Button-background-color: oklch(from var(--solid-design-parts-primary-color) l 0 h);
-  }
-  &[data-solid-general-components-color="error"] {
-    --solid-design-parts-Button-background-color: var(--solid-design-parts-error-color);
-  }
-
-  @media (any-hover: hover) {
-    &:hover {
-      background-color: oklch(from var(--solid-design-parts-Button-background-color) calc(l - 0.05) c h);
+    &[data-solid-general-components-color="primary"] {
+      --solid-design-parts-Button-background-color: var(--solid-design-parts-primary-color);
     }
-  }
-  &:active {
-    background-color: oklch(from var(--solid-design-parts-Button-background-color) calc(l - 0.1) c h);
+    &[data-solid-general-components-color="achromatic"] {
+      --solid-design-parts-Button-background-color: oklch(from var(--solid-design-parts-primary-color) l 0 h);
+    }
+    &[data-solid-general-components-color="error"] {
+      --solid-design-parts-Button-background-color: var(--solid-design-parts-error-color);
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: oklch(from var(--solid-design-parts-Button-background-color) calc(l - 0.05) c h);
+      }
+    }
+    &:active {
+      background-color: oklch(from var(--solid-design-parts-Button-background-color) calc(l - 0.1) c h);
+    }
   }
 }
