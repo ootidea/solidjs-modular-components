@@ -7,7 +7,7 @@ import { SectionTitle } from '~/page-parts/SectionTitle'
 export default function Page() {
   return (
     <>
-      <PageTitle>Modal</PageTitle>
+      <PageTitle />
       <SectionTitle>Open/Close Modal by triggers</SectionTitle>
       <PreviewArea>
         <Modal trigger={(open) => <Button onClick={open}>open</Button>}>

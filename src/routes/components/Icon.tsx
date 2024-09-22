@@ -6,7 +6,7 @@ import { PreviewArea } from '~/page-parts/PreviewArea'
 export default function Page() {
   return (
     <>
-      <PageTitle>Icon</PageTitle>
+      <PageTitle />
       <PreviewArea>
         <Icon url={starIcon} />
       </PreviewArea>

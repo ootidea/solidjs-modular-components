@@ -1,11 +1,12 @@
-export function PageTitle({ children }: { children: string }) {
+export function PageTitle() {
+  const lastPathSegment = location.pathname.split('/').pop()
   return (
     <h1
       style={{
         color: 'oklch(50% 0 0)',
       }}
     >
-      {children}
+      {lastPathSegment}
     </h1>
   )
 }

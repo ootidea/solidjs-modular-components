@@ -5,7 +5,7 @@ import { PreviewArea } from '~/page-parts/PreviewArea'
 export default function Page() {
   return (
     <>
-      <PageTitle>NumberInput</PageTitle>
+      <PageTitle />
       <PreviewArea vertical>
         <NumberInput />
       </PreviewArea>

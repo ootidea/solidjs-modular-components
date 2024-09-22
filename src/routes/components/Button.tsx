@@ -6,7 +6,7 @@ import { SectionTitle } from '~/page-parts/SectionTitle'
 export default function Page() {
   return (
     <>
-      <PageTitle>Button</PageTitle>
+      <PageTitle />
       <SectionTitle>Colors</SectionTitle>
       <PreviewArea>
         <Button>Primary</Button>
