@@ -1,7 +1,7 @@
 @layer solid-general-components {
   .solid-general-components-NumberInput_root {
-    box-sizing: border-box;
     display: block;
+    box-sizing: border-box;
     width: 100%;
     padding: 0.4em 0.6em;
     border: 1px solid oklch(80% 0 0);

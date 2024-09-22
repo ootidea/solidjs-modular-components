@@ -1,20 +1,20 @@
 @layer solid-general-components {
   .solid-general-components-Modal_root {
-    box-sizing: border-box;
     position: fixed;
+    box-sizing: border-box;
     width: fit-content;
     max-width: 100dvw;
     height: fit-content;
     max-height: 100dvh;
     margin: auto;
-    inset: 0;
     padding: 2.5em;
     overflow: unset;
     border: unset;
     border-radius: 0.4em;
     background-color: var(--solid-design-parts-background-color);
-    box-shadow: 0 2px 5px oklch(0 0 0 / 20%);
+    box-shadow: 0 2px 5px oklch(0% 0 0 / 20%);
     color: unset;
+    inset: 0;
     
     &::backdrop {
       background-color: rgba(0 0 0 / 3%);
@@ -22,10 +22,10 @@
     
     &,
     &::backdrop {
+      transition-property: opacity, overlay, display;
+      transition-duration: 300ms;
       opacity: 0;
       transition-behavior: allow-discrete;
-      transition-duration: 300ms;
-      transition-property: opacity, overlay, display;
     }
     
     &:modal {
