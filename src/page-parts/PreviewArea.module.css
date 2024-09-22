@@ -1,18 +1,16 @@
 .root {
+  display: grid;
+  gap: 2em;
   padding: 2em 2.4em;
   border: 1px solid oklch(90% 0 0);
   border-radius: 1em;
   box-shadow: 0 1px 3px oklch(0% 0 0 / 10%);
 
   &[data-direction="horizontal"] {
-    > * + * {
-      margin-left: 1em;
-    }
+    grid-auto-columns: auto;
+    grid-auto-flow: column;
+    justify-content: start;
   }
-
   &[data-direction="vertical"] {
-    > * + * {
-      margin-top: 1em;
-    }
   }
 }

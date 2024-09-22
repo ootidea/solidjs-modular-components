@@ -6,7 +6,7 @@ export default function Page() {
   return (
     <>
       <PageTitle>NumberInput</PageTitle>
-      <PreviewArea>
+      <PreviewArea vertical>
         <NumberInput />
       </PreviewArea>
     </>
