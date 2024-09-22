@@ -2,7 +2,7 @@ import { Button } from '~/library/Button/Button'
 import { PreviewArea } from '~/page-parts/PreviewArea'
 import { SectionTitle } from '~/page-parts/SectionTitle'
 
-export default function ButtonPage() {
+export default function Page() {
   return (
     <>
       <h1>Button</h1>

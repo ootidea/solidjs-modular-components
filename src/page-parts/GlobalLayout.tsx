@@ -11,6 +11,7 @@ export function GlobalLayout(props: RouteSectionProps<unknown>) {
         <aside class={classes.sidebar}>
           <a href="/components/Button">Button</a>
           <a href="/components/Modal">Modal</a>
+          <a href="/components/NumberInput">NumberInput</a>
         </aside>
         <main class={classes.main}>
           <Suspense>{props.children}</Suspense>

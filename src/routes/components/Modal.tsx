@@ -3,7 +3,7 @@ import { Modal } from '~/library/Modal/Modal'
 import { PreviewArea } from '~/page-parts/PreviewArea'
 import { SectionTitle } from '~/page-parts/SectionTitle'
 
-export default function ModalPage() {
+export default function Page() {
   return (
     <>
       <h1>Modal</h1>
