@@ -3,14 +3,16 @@ import './Modal.css'
 import '../common.css'
 import { Icon } from '~/library'
 import { IconButton } from '~/library/IconButton/IconButton'
+import type { Props } from '~/library/utilities'
 import closeIcon from '../icons/close.svg'
 
-export type ModalProps = {
+export type ModalProps = Props<{
   title?: JSX.Element
   showCloseButton?: boolean
   trigger?: (open: () => void) => JSX.Element
   children?: JSX.Element | ((close: () => void) => JSX.Element)
-}
+}>
+
 export function Modal(props: ModalProps) {
   let dialogElement: HTMLDialogElement | undefined
   const closeModal = () => dialogElement?.close()

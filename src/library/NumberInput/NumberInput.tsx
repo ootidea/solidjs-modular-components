@@ -1,8 +1,8 @@
 import './NumberInput.css'
 import '../common.css'
-import type { MakeOptionalPropertiesAcceptUndefined } from 'advanced-type-utilities'
+import type { Props } from '~/library/utilities'
 
-export type NumberInputProps = MakeOptionalPropertiesAcceptUndefined<{
+export type NumberInputProps = Props<{
   value?: number
   onChange?: (value: number) => void
 }>

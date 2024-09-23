@@ -1,10 +1,11 @@
 import './Icon.css'
 import '../common.css'
+import type { Props } from '~/library/utilities'
 
-export type IconProps = {
+export type IconProps = Props<{
   url: string
   size?: string
-}
+}>
 
 export function Icon(props: IconProps) {
   return (
