@@ -48,6 +48,11 @@
     display: grid;
     grid-template-columns: minmax(max-content, 1fr) auto minmax(max-content, 1fr);
     align-items: center;
+    
+    /* Dummy element for grid layout */
+    &:before {
+      content: '';
+    }
   }
   
   .solid-general-components-Modal_title {

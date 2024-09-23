@@ -4,7 +4,7 @@
     height: var(--solid-general-components-IconButton_size);
     padding: 0.4em;
     border: none;
-    border-radius: 9999vmax;
+    border-radius: calc(1px / 0);
     background-color: oklch(0% 0 0 / 0%);
 
     &:not(:disabled) {

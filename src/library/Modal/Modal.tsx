@@ -31,7 +31,6 @@ export function Modal(props: ModalProps) {
         }}
       >
         <div class="solid-general-components-Modal_titleBar">
-          <div aria-hidden="true" />
           {props.title ? (
             <h2 class="solid-general-components-Modal_title">{props.title}</h2>
           ) : (
