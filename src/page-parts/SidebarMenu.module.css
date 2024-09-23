@@ -1,0 +1,16 @@
+.root {
+  text-decoration: none;
+  color: currentColor;
+  display: block;
+  padding: 0.5em 1em;
+  transition: background-color 200ms;
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: oklch(95% 0 0);
+    }
+  }
+  &:active {
+    background-color: oklch(90% 0 0);
+  }
+}
