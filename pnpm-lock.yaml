@@ -28,8 +28,8 @@ importers:
         specifier: ^2.0.5
         version: 2.0.5
       advanced-type-utilities:
-        specifier: ^0.4.0
-        version: 0.4.0
+        specifier: ^0.5.0
+        version: 0.5.0
       npm-run-all2:
         specifier: ^6.2.3
         version: 6.2.3
@@ -939,8 +939,8 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
 
-  advanced-type-utilities@0.4.0:
-    resolution: {integrity: sha512-dAd1Uzjzt0luZjAPv+m0bqnfvyx8mcykOiIn/Spdw0V6sVdHDLMujxKn2FDXW8K9tLMCOyWkfM5+emRvalcLGA==}
+  advanced-type-utilities@0.5.0:
+    resolution: {integrity: sha512-HaPVBqrFZhRo8Fll7rCKIp+bD+1F0W1A/rQe/EZ9IoXdOpCahxyFnHBTh3l4rNSUVPq9ZXknUCJJvCOjlnavQg==}
 
   agent-base@6.0.2:
     resolution: {integrity: sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==}
@@ -3666,7 +3666,7 @@ snapshots:
 
   acorn@8.12.1: {}
 
-  advanced-type-utilities@0.4.0: {}
+  advanced-type-utilities@0.5.0: {}
 
   agent-base@6.0.2:
     dependencies:

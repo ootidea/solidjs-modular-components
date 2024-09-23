@@ -1,9 +1,8 @@
 import './IconButton.css'
 import '../common.css'
-import type { ComponentProps } from 'solid-js'
-import { mergeClass } from '~/library/utilities'
+import { type Props, mergeClass } from '~/library/utilities'
 
-export type IconButtonProps = ComponentProps<'button'>
+export type IconButtonProps = Props<{}, 'button'>
 
 export function IconButton(props: IconButtonProps) {
   return (
