@@ -65,5 +65,6 @@
   
   .solid-general-components-Modal_closeButton {
     margin-left: auto;
+    color: oklch(45% 0 0);
   }
 }
