@@ -21,9 +21,7 @@
     }
 
     &:disabled {
-      background-color: oklch(from var(--solid-general-components-Button-background-color) 97% calc(c * 0.025) h);
-      color: oklch(85% 0 0);
-
+      background-color: color-mix(in oklab, var(--solid-general-components-Button-background-color) 34%, white);
       cursor: not-allowed;
     }
     &:not(:disabled) {
