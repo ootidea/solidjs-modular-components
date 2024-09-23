@@ -1,9 +1,9 @@
 .root {
-  text-decoration: none;
-  color: currentColor;
   display: block;
   padding: 0.5em 1em;
   transition: background-color 200ms;
+  color: currentColor;
+  text-decoration: none;
 
   @media (any-hover: hover) {
     &:hover {

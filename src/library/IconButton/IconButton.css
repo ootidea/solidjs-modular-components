@@ -1,11 +1,13 @@
 @layer solid-general-components {
   .solid-general-components-IconButton_root {
-    width: var(--solid-general-components-IconButton_size);
-    height: var(--solid-general-components-IconButton_size);
-    padding: 0.4em;
+    box-sizing: border-box;
+    width: max-content;
+    height: max-content;
+    padding: 0.2lh;
     border: none;
     border-radius: calc(1px / 0);
     background-color: oklch(0% 0 0 / 0%);
+    font: inherit;
 
     &:not(:disabled) {
       cursor: pointer;

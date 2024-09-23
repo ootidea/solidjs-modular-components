@@ -1,6 +1,7 @@
 @layer solid-general-components {
   .solid-general-components-Icon_root {
     display: inline-block;
+    box-sizing: border-box;
     width: var(--solid-general-components-Icon_size);
     height: var(--solid-general-components-Icon_size);
 

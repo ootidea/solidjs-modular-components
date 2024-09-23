@@ -13,7 +13,7 @@ export function Icon(props: IconProps) {
       class="solid-general-components-Icon_root"
       style={{
         '--solid-general-components-Icon_url': `url('${props.url.replaceAll("'", '"')}')`,
-        '--solid-general-components-Icon_size': props.size ?? '1.5em',
+        '--solid-general-components-Icon_size': props.size ?? '1lh',
       }}
       role="img"
     />
