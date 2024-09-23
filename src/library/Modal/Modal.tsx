@@ -6,6 +6,7 @@ import { IconButton } from '~/library/IconButton/IconButton'
 import closeIcon from '../icons/close.svg'
 
 export type ModalProps = {
+  title?: JSX.Element
   showCloseButton?: boolean
   trigger?: (open: () => void) => JSX.Element
   children?: JSX.Element | ((close: () => void) => JSX.Element)
@@ -28,10 +29,18 @@ export function Modal(props: ModalProps) {
         }}
       >
         <div class="solid-general-components-Modal_titleBar">
-          {props.showCloseButton && (
+          <div aria-hidden="true" />
+          {props.title ? (
+            <h2 class="solid-general-components-Modal_title">{props.title}</h2>
+          ) : (
+            <div aria-hidden="true" />
+          )}
+          {props.showCloseButton ? (
             <IconButton class="solid-general-components-Modal_closeButton" onClick={closeModal}>
               <Icon url={closeIcon} />
             </IconButton>
+          ) : (
+            <div aria-hidden="true" />
           )}
         </div>
         {typeof props.children === 'function' ? props.children(closeModal) : props.children}

@@ -35,6 +35,13 @@ export default function Page() {
           )}
         </Modal>
       </PreviewArea>
+
+      <SectionTitle>Modal title</SectionTitle>
+      <PreviewArea>
+        <Modal title="Title" showCloseButton trigger={(open) => <Button onClick={open}>open</Button>}>
+          <p style={{ margin: '0.5em 1em' }}>The title is centered</p>
+        </Modal>
+      </PreviewArea>
     </>
   )
 }
