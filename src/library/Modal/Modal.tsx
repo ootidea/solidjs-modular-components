@@ -38,7 +38,11 @@ export function Modal(props: ModalProps) {
             <div aria-hidden="true" />
           )}
           {props.showCloseButton ? (
-            <IconButton class="solid-general-components-Modal_closeButton" onClick={closeModal}>
+            <IconButton
+              class="solid-general-components-Modal_closeButton"
+              aria-label="Close modal dialog"
+              onClick={closeModal}
+            >
               <Icon url={closeIcon} />
             </IconButton>
           ) : (
