@@ -20,13 +20,13 @@ export function NumberInput(props: NumberInputProps) {
       if (props.allowOnlyPositive) {
         target.value = target.value.replaceAll(/[^0-9]/g, '')
       } else {
-        target.value = target.value.replaceAll(/[^0-9-]/g, '')
+        target.value = target.value.replaceAll(/(?!^)-|[^0-9-]/g, '')
       }
     } else {
       if (props.allowOnlyPositive) {
-        target.value = target.value.replaceAll(/[^0-9.]/g, '')
+        target.value = target.value.replaceAll(/(?<=\..*)\.|[^0-9.]/g, '')
       } else {
-        target.value = target.value.replaceAll(/[^0-9.-]/g, '')
+        target.value = target.value.replaceAll(/(?!^)-|(?<=\..*)\.|[^0-9.-]/g, '')
       }
     }
     const newCursorPosition = originalCursorPosition - (originalLength - target.value.length)
