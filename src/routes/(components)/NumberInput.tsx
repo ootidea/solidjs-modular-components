@@ -8,6 +8,8 @@ export default function Page() {
       <PageTitle />
       <PreviewArea vertical>
         <NumberInput />
+        <NumberInput value={42.5} />
+        <NumberInput placeholder="placeholder" />
       </PreviewArea>
     </>
   )
