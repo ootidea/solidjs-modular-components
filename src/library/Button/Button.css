@@ -21,7 +21,11 @@
     }
 
     &:disabled {
-      background-color: color-mix(in oklab, var(--solid-general-components-Button-background-color) 34%, white);
+      background-color: color-mix(
+        in oklab,
+        var(--solid-general-components-Button-background-color) 34%,
+        var(--solid-general-components-background-color)
+      );
       cursor: not-allowed;
     }
     &:not(:disabled) {

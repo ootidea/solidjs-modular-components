@@ -5,5 +5,6 @@
 
     --solid-general-components-inverted-text-color: oklch(100% 0 0);
     --solid-general-components-background-color: oklch(100% 0 0);
+    --solid-general-components-placeholder-text-color: oklch(70% 0 0);
   }
 }
