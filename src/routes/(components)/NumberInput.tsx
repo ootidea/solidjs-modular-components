@@ -13,11 +13,11 @@ export default function Page() {
         <NumberInput placeholder="placeholder" />
       </PreviewArea>
 
-      <SectionTitle>Number Input Restrictions</SectionTitle>
+      <SectionTitle>Restrict symbol input</SectionTitle>
       <PreviewArea vertical>
-        <NumberInput placeholder="only integer" allowOnlyInteger />
-        <NumberInput placeholder="only positive number" allowOnlyPositive />
-        <NumberInput placeholder="only positive integer" allowOnlyInteger allowOnlyPositive />
+        <NumberInput placeholder="Integers only" integer />
+        <NumberInput placeholder="Non-negative numbers only" nonNegative />
+        <NumberInput placeholder="Natural numbers only" integer nonNegative />
       </PreviewArea>
     </>
   )

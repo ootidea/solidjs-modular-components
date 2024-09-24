@@ -5,8 +5,8 @@ import type { Props } from '~/library/utilities'
 export type NumberInputProps = Props<{
   value?: number
   placeholder?: string
-  allowOnlyInteger?: boolean
-  allowOnlyPositive?: boolean
+  integer?: boolean
+  nonNegative?: boolean
   maxLength?: number
   onChange?: (value: number) => void
 }>
@@ -16,14 +16,14 @@ export function NumberInput(props: NumberInputProps) {
     if (target.selectionStart === null) return
     const originalLength = target.value.length
     const originalCursorPosition = target.selectionStart
-    if (props.allowOnlyInteger) {
-      if (props.allowOnlyPositive) {
+    if (props.integer) {
+      if (props.nonNegative) {
         target.value = target.value.replaceAll(/[^0-9]/g, '')
       } else {
         target.value = target.value.replaceAll(/(?!^)-|[^0-9-]/g, '')
       }
     } else {
-      if (props.allowOnlyPositive) {
+      if (props.nonNegative) {
         target.value = target.value.replaceAll(/(?<=\..*)\.|[^0-9.]/g, '')
       } else {
         target.value = target.value.replaceAll(/(?!^)-|(?<=\..*)\.|[^0-9.-]/g, '')
