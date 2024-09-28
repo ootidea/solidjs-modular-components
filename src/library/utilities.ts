@@ -1,9 +1,16 @@
-import type { Equals, MakeOptionalPropertiesAcceptUndefined, OverwriteProperties } from 'advanced-type-utilities'
+import type {
+  Equals,
+  LiteralAutoComplete,
+  MakeOptionalPropertiesAcceptUndefined,
+  OverwriteProperties,
+} from 'advanced-type-utilities'
 import type { ComponentProps, ValidComponent } from 'solid-js'
 
 export type Props<T, B extends ValidComponent = never> = Equals<B, never> extends true
   ? MakeOptionalPropertiesAcceptUndefined<T>
   : OverwriteProperties<ComponentProps<B>, MakeOptionalPropertiesAcceptUndefined<T>>
+
+export type CssColor = LiteralAutoComplete<'currentColor' | 'transparent'>
 
 export function setDefaultProps<T extends object, U extends object>(
   rawProps: T,

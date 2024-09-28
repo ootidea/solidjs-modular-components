@@ -1,6 +1,5 @@
-import type { LiteralAutoComplete } from 'advanced-type-utilities'
 import { createMemoObject } from 'solid-signal-object'
-import { type Props, setDefaultProps } from '~/library/utilities'
+import { type CssColor, type Props, setDefaultProps } from '~/library/utilities'
 import './Spinner.css'
 import '../common.css'
 
@@ -8,7 +7,7 @@ export type SpinnerProps = Props<{
   size?: string
   thickness?: number
   rpm?: number
-  color?: LiteralAutoComplete<'currentColor'>
+  color?: CssColor
 }>
 
 export function Spinner(rawProps: SpinnerProps) {

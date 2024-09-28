@@ -6,6 +6,7 @@
     height: var(--solid-general-components-Icon_size);
 
     background-color: currentColor;
+    color: var(--solid-general-components-Icon_color);
     vertical-align: top;
     mask: var(--solid-general-components-Icon_url) no-repeat center;
     mask-size: contain;
