@@ -16,6 +16,7 @@ export function GlobalLayout(props: RouteSectionProps<unknown>) {
           <SidebarMenu>NumberInput</SidebarMenu>
           <SidebarMenu>Icon</SidebarMenu>
           <SidebarMenu>IconButton</SidebarMenu>
+          <SidebarMenu>Spinner</SidebarMenu>
         </nav>
         <main class={classes.main}>
           <Suspense>{props.children}</Suspense>
