@@ -1,24 +1,25 @@
 import { MetaProvider, Title } from '@solidjs/meta'
 import { type RouteSectionProps, useLocation } from '@solidjs/router'
 import { Suspense } from 'solid-js'
-import { SidebarMenu } from '~/page-parts/SidebarMenu'
-import classes from './GlobalLayout.module.css'
+import { Sidebar } from '~/page-parts/Sidebar'
 
-export function GlobalLayout(props: RouteSectionProps<unknown>) {
+export function GlobalLayout(props: RouteSectionProps) {
   const location = useLocation()
   return (
     <MetaProvider>
       <Title>{location.pathname.split('/').pop()} | solid-general-components</Title>
-      <div class={classes.root}>
-        <nav class={classes.sidebar}>
-          <SidebarMenu>Button</SidebarMenu>
-          <SidebarMenu>Modal</SidebarMenu>
-          <SidebarMenu>NumberInput</SidebarMenu>
-          <SidebarMenu>Icon</SidebarMenu>
-          <SidebarMenu>IconButton</SidebarMenu>
-          <SidebarMenu>Spinner</SidebarMenu>
-        </nav>
-        <main class={classes.main}>
+      <div
+        style={{
+          display: 'grid',
+          'grid-template-columns': 'auto 1fr',
+        }}
+      >
+        <Sidebar />
+        <main
+          style={{
+            padding: '2em 6em',
+          }}
+        >
           <Suspense>{props.children}</Suspense>
         </main>
       </div>

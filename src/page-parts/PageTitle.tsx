@@ -8,6 +8,7 @@ export function PageTitle() {
         color: 'oklch(50% 0 0)',
       }}
     >
+      {/* TODO: use takeLastWhileString function */}
       {location.pathname.split('/').pop()}
     </h1>
   )
