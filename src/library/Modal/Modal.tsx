@@ -15,10 +15,11 @@ export type ModalProps = Props<{
 
 export function Modal(props: ModalProps) {
   let dialogElement: HTMLDialogElement | undefined
+  const openModal = () => dialogElement?.showModal()
   const closeModal = () => dialogElement?.close()
   return (
     <>
-      {props?.trigger?.(() => dialogElement?.showModal())}
+      {props.trigger?.(openModal)}
 
       <dialog
         class="solidjs-modular-components-Modal_root"
