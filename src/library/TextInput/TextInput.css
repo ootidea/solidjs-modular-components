@@ -1,0 +1,24 @@
+@layer solid-general-components {
+  .solid-general-components-TextInput_root {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.4em 0.6em;
+    border: 1px solid oklch(80% 0 0);
+    border-radius: 0.3em;
+    outline: none;
+    font: inherit;
+
+    &::placeholder {
+      color: var(--solid-general-components-placeholder-text-color);
+    }
+
+    &:focus-visible {
+      border-color: var(--solid-general-components-primary-color);
+    }
+
+    &:is(:invalid, [aria-invalid="true"]) {
+      border-color: var(--solid-general-components-error-color);
+    }
+  }
+}

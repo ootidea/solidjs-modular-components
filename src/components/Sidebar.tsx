@@ -18,6 +18,7 @@ export function Sidebar() {
     >
       <SidebarMenu>Button</SidebarMenu>
       <SidebarMenu>Modal</SidebarMenu>
+      <SidebarMenu>TextInput</SidebarMenu>
       <SidebarMenu>NumberInput</SidebarMenu>
       <SidebarMenu>Icon</SidebarMenu>
       <SidebarMenu>IconButton</SidebarMenu>
