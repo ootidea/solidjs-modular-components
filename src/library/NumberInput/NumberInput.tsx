@@ -43,7 +43,11 @@ export function NumberInput(props: NumberInputProps) {
       placeholder={props.placeholder}
       maxLength={props.maxLength}
       aria-invalid={props['aria-invalid']}
-      onChange={({ target }) => props.onChange?.(Number(target.value))}
+      onChange={({ target }) => {
+        const number = Number(target.value)
+        if (Number.isNaN(number)) return
+        props.onChange?.(number)
+      }}
       onInput={onInput}
     />
   )
