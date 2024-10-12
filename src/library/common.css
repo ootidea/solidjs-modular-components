@@ -1,7 +1,7 @@
 @layer solid-general-components {
   :root {
-    --solid-general-components-primary-color: oklch(59% 0.17 255.4);
-    --solid-general-components-error-color: oklch(55% 0.19 30);
+    --solid-general-components-primary-color: oklch(59% 0.15 255.4);
+    --solid-general-components-error-color: oklch(59% 0.17 30);
 
     --solid-general-components-inverted-text-color: oklch(100% 0 0);
     --solid-general-components-background-color: oklch(100% 0 0);
