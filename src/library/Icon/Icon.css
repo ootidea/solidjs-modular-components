@@ -8,7 +8,7 @@
     background-color: currentColor;
     color: var(--solidjs-modular-components-Icon_color);
     vertical-align: top;
-    mask: var(--solidjs-modular-components-Icon_url) no-repeat center;
+    mask: var(--solidjs-modular-components-Icon_image) no-repeat center;
     mask-size: contain;
 
     /*transform-origin: center;*/

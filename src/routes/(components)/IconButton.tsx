@@ -11,10 +11,10 @@ export default function Page() {
       <PageTitle />
       <PreviewArea>
         <IconButton>
-          <Icon url={starOutlineIcon} />
+          <Icon src={starOutlineIcon} />
         </IconButton>
         <IconButton>
-          <Icon url={starIcon} />
+          <Icon src={starIcon} />
         </IconButton>
       </PreviewArea>
     </>

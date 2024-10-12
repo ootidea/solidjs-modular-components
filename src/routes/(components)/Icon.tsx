@@ -8,8 +8,8 @@ export default function Page() {
     <>
       <PageTitle />
       <PreviewArea>
-        <Icon url={starOutlineIcon} />
-        <Icon url={starOutlineIcon} color="var(--solidjs-modular-components-primary-color)" />
+        <Icon src={starOutlineIcon} />
+        <Icon src={starOutlineIcon} color="var(--solidjs-modular-components-primary-color)" />
       </PreviewArea>
     </>
   )

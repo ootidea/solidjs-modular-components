@@ -42,7 +42,7 @@ export function Modal(props: ModalProps) {
               aria-label="Close modal dialog"
               onClick={closeModal}
             >
-              <Icon url={closeIcon} />
+              <Icon src={closeIcon} />
             </IconButton>
           ) : (
             <div aria-hidden="true" />
