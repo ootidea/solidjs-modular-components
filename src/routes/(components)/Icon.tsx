@@ -1,7 +1,7 @@
 import starOutlineIcon from '~/assets/star-outline.svg'
+import { PageTitle } from '~/components/PageTitle'
+import { PreviewArea } from '~/components/PreviewArea'
 import { Icon } from '~/library/Icon/Icon'
-import { PageTitle } from '~/page-parts/PageTitle'
-import { PreviewArea } from '~/page-parts/PreviewArea'
 
 export default function Page() {
   return (

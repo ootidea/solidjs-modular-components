@@ -1,7 +1,7 @@
 import { MetaProvider, Title } from '@solidjs/meta'
 import { type RouteSectionProps, useLocation } from '@solidjs/router'
 import { Suspense } from 'solid-js'
-import { Sidebar } from '~/page-parts/Sidebar'
+import { Sidebar } from '~/components/Sidebar'
 
 export function GlobalLayout(props: RouteSectionProps) {
   const location = useLocation()

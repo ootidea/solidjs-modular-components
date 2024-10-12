@@ -1,7 +1,7 @@
+import { PageTitle } from '~/components/PageTitle'
+import { PreviewArea } from '~/components/PreviewArea'
+import { SectionTitle } from '~/components/SectionTitle'
 import { Button } from '~/library/Button/Button'
-import { PageTitle } from '~/page-parts/PageTitle'
-import { PreviewArea } from '~/page-parts/PreviewArea'
-import { SectionTitle } from '~/page-parts/SectionTitle'
 
 export default function Page() {
   return (

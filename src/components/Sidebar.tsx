@@ -1,4 +1,4 @@
-import { SidebarMenu } from '~/page-parts/SidebarMenu'
+import { SidebarMenu } from '~/components/SidebarMenu'
 
 export function Sidebar() {
   return (
