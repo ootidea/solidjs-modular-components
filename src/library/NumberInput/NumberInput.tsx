@@ -1,6 +1,6 @@
 import './NumberInput.css'
 import '../common.css'
-import type { Props } from '~/library/utilities'
+import type { Props } from '../utilities'
 
 export type NumberInputProps = Props<{
   value?: number

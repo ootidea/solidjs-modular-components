@@ -1,10 +1,10 @@
 import type { JSX } from 'solid-js'
 import './Modal.css'
 import '../common.css'
-import { Icon } from '~/library'
-import { IconButton } from '~/library/IconButton/IconButton'
-import closeIcon from '~/library/assets/close.svg'
-import type { Props } from '~/library/utilities'
+import { Icon } from '../Icon/Icon'
+import { IconButton } from '../IconButton/IconButton'
+import closeIcon from '../assets/close.svg'
+import type { Props } from '../utilities'
 
 export type ModalProps = Props<{
   title?: JSX.Element

@@ -1,4 +1,4 @@
-import { type CssColor, type Props, setDefaultProps } from '~/library/utilities'
+import { type CssColor, type Props, setDefaultProps } from '../utilities'
 import './Spinner.css'
 import '../common.css'
 import { createMemo } from 'solid-js'

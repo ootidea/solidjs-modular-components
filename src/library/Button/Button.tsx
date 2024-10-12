@@ -1,7 +1,7 @@
 import type { JSX } from 'solid-js'
 import './Button.css'
 import '../common.css'
-import { RESERVED_COLOR_MAP, setDefaultProps } from '~/library/utilities'
+import { RESERVED_COLOR_MAP, setDefaultProps } from '../utilities'
 
 export type ButtonProps = {
   color?: 'primary' | 'achromatic' | 'error'

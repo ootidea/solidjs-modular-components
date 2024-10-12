@@ -6,17 +6,25 @@
   "license": "CC0-1.0",
   "author": "",
   "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
   "scripts": {
     "dev": "vinxi dev --port 3491",
     "build-website": "vinxi build",
-    "build": "vite build",
+    "build": "vite build && tsc -p tsconfig.build-dts.json",
     "fix": "run-p \"fix:*\"",
     "fix:biome": "biome check --write",
     "fix:package-json": "sort-package-json",
     "fix:css": "stylelint --fix \"src/**/*.css\"",
     "check": "run-p \"check:*\"",
     "check:type": "tsc --noEmit",
-    "check:biome": "biome check"
+    "check:biome": "biome check",
+    "preversion": "pnpm fix && pnpm check && pnpm build",
+    "postversion": "npm publish ./ && git push --follow-tags"
   },
   "dependencies": {
     "solid-signal-object": "^1.1.2"

@@ -1,6 +1,6 @@
 import './IconButton.css'
 import '../common.css'
-import { type Props, mergeClass } from '~/library/utilities'
+import { type Props, mergeClass } from '../utilities'
 
 export type IconButtonProps = Props<{}, 'button'>
 

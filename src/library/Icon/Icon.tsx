@@ -1,6 +1,6 @@
 import './Icon.css'
 import '../common.css'
-import type { CssColor, Props } from '~/library/utilities'
+import type { CssColor, Props } from '../utilities'
 
 export type IconProps = Props<{
   url: string
