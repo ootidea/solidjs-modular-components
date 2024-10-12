@@ -1,5 +1,5 @@
-import starOutlineIcon from '~/icons/star-outline.svg'
-import starIcon from '~/icons/star.svg'
+import starOutlineIcon from '~/assets/star-outline.svg'
+import starIcon from '~/assets/star.svg'
 import { Icon } from '~/library'
 import { IconButton } from '~/library/IconButton/IconButton'
 import { PageTitle } from '~/page-parts/PageTitle'

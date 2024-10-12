@@ -3,8 +3,8 @@ import './Modal.css'
 import '../common.css'
 import { Icon } from '~/library'
 import { IconButton } from '~/library/IconButton/IconButton'
+import closeIcon from '~/library/assets/close.svg'
 import type { Props } from '~/library/utilities'
-import closeIcon from '../icons/close.svg'
 
 export type ModalProps = Props<{
   title?: JSX.Element
