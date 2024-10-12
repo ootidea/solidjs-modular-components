@@ -19,6 +19,12 @@ export default function Page() {
         <NumberInput placeholder="Non-negative numbers only" nonNegative />
         <NumberInput placeholder="Natural numbers only" integer nonNegative />
       </PreviewArea>
+
+      <SectionTitle>Error state</SectionTitle>
+      <PreviewArea vertical>
+        <NumberInput aria-invalid="true" />
+        <NumberInput aria-invalid value={999} />
+      </PreviewArea>
     </>
   )
 }

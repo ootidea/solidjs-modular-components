@@ -8,6 +8,7 @@ export type NumberInputProps = Props<{
   integer?: boolean
   nonNegative?: boolean
   maxLength?: number
+  'aria-invalid'?: boolean | 'true' | 'false'
   onChange?: (value: number) => void
 }>
 
@@ -41,6 +42,7 @@ export function NumberInput(props: NumberInputProps) {
       value={props.value ?? ''}
       placeholder={props.placeholder}
       maxLength={props.maxLength}
+      aria-invalid={props['aria-invalid']}
       onChange={({ target }) => props.onChange?.(Number(target.value))}
       onInput={onInput}
     />
