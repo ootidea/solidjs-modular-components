@@ -1,14 +1,14 @@
-import type { JSX } from 'solid-js'
 import './Button.css'
 import '../common.css'
-import { RESERVED_COLOR_MAP, setDefaultProps } from '../utilities'
+import { type Props, RESERVED_COLOR_MAP, setDefaultProps } from '../utilities'
 
-export type ButtonProps = {
-  color?: 'primary' | 'achromatic' | 'error'
-  disabled?: boolean
-  onClick?: (event: MouseEvent) => unknown
-  children?: JSX.Element
-}
+export type ButtonProps = Props<
+  {
+    color?: 'primary' | 'achromatic' | 'error'
+    onClick?: (event: MouseEvent) => unknown
+  },
+  'button'
+>
 
 export function Button(rawProps: ButtonProps) {
   const props = setDefaultProps(rawProps, {
@@ -17,7 +17,7 @@ export function Button(rawProps: ButtonProps) {
   return (
     <button
       class="solidjs-modular-components-Button_root"
-      type="button"
+      type={props.type ?? 'button'}
       disabled={props.disabled}
       style={{
         '--solidjs-modular-components-Button-button-color': RESERVED_COLOR_MAP[props.color],
