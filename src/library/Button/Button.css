@@ -4,26 +4,14 @@
     padding: 0.4em 0.9em;
     border: none;
     border-radius: 0.4em;
-    background-color: var(--solid-general-components-Button-background-color);
+    background-color: var(--solid-general-components-Button-button-color);
     color: var(--solid-general-components-inverted-text-color);
     font: inherit;
-
-    &[data-solid-general-components-color="primary"] {
-      --solid-general-components-Button-background-color: var(--solid-general-components-primary-color);
-    }
-    &[data-solid-general-components-color="achromatic"] {
-      --solid-general-components-Button-background-color: oklch(
-        from var(--solid-general-components-primary-color) l 0 h
-      );
-    }
-    &[data-solid-general-components-color="error"] {
-      --solid-general-components-Button-background-color: var(--solid-general-components-error-color);
-    }
 
     &:disabled {
       background-color: color-mix(
         in oklab,
-        var(--solid-general-components-Button-background-color) 34%,
+        var(--solid-general-components-Button-button-color) 34%,
         var(--solid-general-components-background-color)
       );
       cursor: not-allowed;
@@ -33,11 +21,11 @@
 
       @media (any-hover: hover) {
         &:hover {
-          background-color: oklch(from var(--solid-general-components-Button-background-color) calc(l - 0.05) c h);
+          background-color: oklch(from var(--solid-general-components-Button-button-color) calc(l - 0.05) c h);
         }
       }
       &:active {
-        background-color: oklch(from var(--solid-general-components-Button-background-color) calc(l - 0.1) c h);
+        background-color: oklch(from var(--solid-general-components-Button-button-color) calc(l - 0.1) c h);
       }
     }
   }

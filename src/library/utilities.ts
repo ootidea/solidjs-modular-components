@@ -12,7 +12,13 @@ export type Props<T, B extends ValidComponent = never> = Equals<B, never> extend
 
 export type CssColor = LiteralAutoComplete<'currentColor' | 'transparent'>
 
-export function setDefaultProps<T extends object, U extends object>(
+export const RESERVED_COLOR_MAP = {
+  primary: 'var(--solid-general-components-primary-color)',
+  error: 'var(--solid-general-components-error-color)',
+  achromatic: 'oklch(from var(--solid-general-components-primary-color) l 0 h)',
+}
+
+export function setDefaultProps<T extends object, const U extends object>(
   rawProps: T,
   defaultValues: U,
 ): OverwriteProperties<T, U> {
