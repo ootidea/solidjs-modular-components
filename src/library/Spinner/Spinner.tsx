@@ -3,12 +3,15 @@ import './Spinner.css'
 import '../common.css'
 import { createMemo } from 'solid-js'
 
-export type SpinnerProps = Props<{
-  size?: string
-  thickness?: number
-  rpm?: number
-  color?: CssColor
-}>
+export type SpinnerProps = Props<
+  {
+    size?: string
+    thickness?: number
+    rpm?: number
+    color?: CssColor
+  },
+  'div'
+>
 
 export function Spinner(rawProps: SpinnerProps) {
   const props = setDefaultProps(rawProps, {
@@ -27,6 +30,7 @@ export function Spinner(rawProps: SpinnerProps) {
 
   return (
     <div
+      {...props}
       class="solidjs-modular-components-Spinner_root"
       style={{
         '--solidjs-modular-components-Spinner_size': props.size,

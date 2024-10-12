@@ -2,15 +2,18 @@ import './NumberInput.css'
 import '../common.css'
 import type { Props } from '../utilities'
 
-export type NumberInputProps = Props<{
-  value?: number
-  placeholder?: string
-  integer?: boolean
-  nonNegative?: boolean
-  maxLength?: number
-  'aria-invalid'?: boolean | 'true' | 'false'
-  onChange?: (value: number) => void
-}>
+export type NumberInputProps = Props<
+  {
+    value?: number
+    placeholder?: string
+    integer?: boolean
+    nonNegative?: boolean
+    maxLength?: number
+    'aria-invalid'?: boolean | 'true' | 'false'
+    onChange?: (value: number) => void
+  },
+  'input'
+>
 
 export function NumberInput(props: NumberInputProps) {
   const onInput = ({ target }: { target: HTMLInputElement }) => {
@@ -36,6 +39,7 @@ export function NumberInput(props: NumberInputProps) {
 
   return (
     <input
+      {...props}
       class="solidjs-modular-components-NumberInput_root"
       type="text"
       inputmode="numeric"

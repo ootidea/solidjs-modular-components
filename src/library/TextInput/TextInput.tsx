@@ -2,12 +2,15 @@ import './TextInput.css'
 import '../common.css'
 import type { Props } from '../utilities'
 
-export type TextInputProps = Props<{
-  value?: string
-  placeholder?: string
-  'aria-invalid'?: boolean | 'true' | 'false'
-  onChange?: (value: string) => void
-}>
+export type TextInputProps = Props<
+  {
+    value?: string
+    placeholder?: string
+    'aria-invalid'?: boolean | 'true' | 'false'
+    onChange?: (value: string) => void
+  },
+  'input'
+>
 
 export function TextInput(props: TextInputProps) {
   const onInput = ({ target }: { target: HTMLInputElement }) => {
@@ -22,6 +25,7 @@ export function TextInput(props: TextInputProps) {
 
   return (
     <input
+      {...props}
       class="solidjs-modular-components-TextInput_root"
       value={props.value ?? ''}
       placeholder={props.placeholder}
