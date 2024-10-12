@@ -3,8 +3,17 @@
   "version": "0.0.0",
   "description": "",
   "keywords": [],
+  "homepage": "https://github.com/ootidea/solidjs-modular-components",
+  "bugs": {
+    "url": "https://github.com/ootidea/solidjs-modular-components/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ootidea/solidjs-modular-components.git"
+  },
   "license": "CC0-1.0",
-  "author": "",
+  "author": "ootidea",
+  "sideEffects": false,
   "type": "module",
   "exports": {
     ".": {
@@ -12,6 +21,9 @@
       "import": "./dist/index.js"
     }
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vinxi dev --port 3491",
     "build-website": "vinxi build",
@@ -24,7 +36,7 @@
     "check:type": "tsc --noEmit",
     "check:biome": "biome check",
     "preversion": "pnpm fix && pnpm check && pnpm build",
-    "postversion": "npm publish ./ && git push --follow-tags"
+    "postversion": "npm publish --access public && git push --follow-tags"
   },
   "dependencies": {
     "solid-signal-object": "^1.1.2"
