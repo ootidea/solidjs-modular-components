@@ -7,7 +7,7 @@ export function GlobalLayout(props: RouteSectionProps) {
   const location = useLocation()
   return (
     <MetaProvider>
-      <Title>{location.pathname.split('/').pop()} | solid-general-components</Title>
+      <Title>{location.pathname.split('/').pop()} | solidjs-modular-components</Title>
       <div
         style={{
           display: 'grid',

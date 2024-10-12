@@ -9,7 +9,7 @@ export default function Page() {
       <PageTitle />
       <PreviewArea>
         <Spinner />
-        <Spinner color="var(--solid-general-components-primary-color)" />
+        <Spinner color="var(--solidjs-modular-components-primary-color)" />
       </PreviewArea>
       <SectionTitle>Size</SectionTitle>
       <PreviewArea>

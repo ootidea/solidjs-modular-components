@@ -1,5 +1,5 @@
-@layer solid-general-components {
-  .solid-general-components-TextInput_root {
+@layer solidjs-modular-components {
+  .solidjs-modular-components-TextInput_root {
     display: block;
     box-sizing: border-box;
     width: 100%;
@@ -10,15 +10,15 @@
     font: inherit;
 
     &::placeholder {
-      color: var(--solid-general-components-placeholder-text-color);
+      color: var(--solidjs-modular-components-placeholder-text-color);
     }
 
     &:focus-visible {
-      border-color: var(--solid-general-components-primary-color);
+      border-color: var(--solidjs-modular-components-primary-color);
     }
 
     &:is(:invalid, [aria-invalid="true"]) {
-      border-color: var(--solid-general-components-error-color);
+      border-color: var(--solidjs-modular-components-error-color);
     }
   }
 }

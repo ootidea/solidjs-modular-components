@@ -1,1 +1,1 @@
-# solid-general-components
+# solidjs-modular-components

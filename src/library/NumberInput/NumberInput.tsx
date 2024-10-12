@@ -36,7 +36,7 @@ export function NumberInput(props: NumberInputProps) {
 
   return (
     <input
-      class="solid-general-components-NumberInput_root"
+      class="solidjs-modular-components-NumberInput_root"
       type="text"
       inputmode="numeric"
       value={props.value ?? ''}

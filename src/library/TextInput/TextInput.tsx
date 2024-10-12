@@ -22,7 +22,7 @@ export function TextInput(props: TextInputProps) {
 
   return (
     <input
-      class="solid-general-components-TextInput_root"
+      class="solidjs-modular-components-TextInput_root"
       value={props.value ?? ''}
       placeholder={props.placeholder}
       aria-invalid={props['aria-invalid']}

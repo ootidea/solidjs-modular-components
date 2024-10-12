@@ -9,7 +9,7 @@ export default function Page() {
       <PageTitle />
       <PreviewArea>
         <Icon url={starOutlineIcon} />
-        <Icon url={starOutlineIcon} color="var(--solid-general-components-primary-color)" />
+        <Icon url={starOutlineIcon} color="var(--solidjs-modular-components-primary-color)" />
       </PreviewArea>
     </>
   )

@@ -1,5 +1,5 @@
-@layer solid-general-components {
-  .solid-general-components-Modal_root {
+@layer solidjs-modular-components {
+  .solidjs-modular-components-Modal_root {
     position: fixed;
     box-sizing: border-box;
     width: fit-content;
@@ -12,7 +12,7 @@
     overflow: unset;
     border: unset;
     border-radius: 0.4em;
-    background-color: var(--solid-general-components-background-color);
+    background-color: var(--solidjs-modular-components-background-color);
     box-shadow: 0 2px 5px oklch(0% 0 0 / 20%);
     color: unset;
     inset: 0;
@@ -44,7 +44,7 @@
     }
   }
   
-  .solid-general-components-Modal_titleBar {
+  .solidjs-modular-components-Modal_titleBar {
     display: grid;
     grid-template-columns: minmax(max-content, 1fr) auto minmax(max-content, 1fr);
     align-items: center;
@@ -55,7 +55,7 @@
     }
   }
   
-  .solid-general-components-Modal_title {
+  .solidjs-modular-components-Modal_title {
     margin: 0.3em;
     color: oklch(45% 0 0);
     font-size: 1.1em;
@@ -63,7 +63,7 @@
     white-space: pre-wrap;
   }
   
-  .solid-general-components-Modal_closeButton {
+  .solidjs-modular-components-Modal_closeButton {
     margin-left: auto;
     color: oklch(45% 0 0);
   }

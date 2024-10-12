@@ -1,10 +1,10 @@
-@layer solid-general-components {
+@layer solidjs-modular-components {
   :root {
-    --solid-general-components-primary-color: oklch(59% 0.15 255.4);
-    --solid-general-components-error-color: oklch(59% 0.17 30);
+    --solidjs-modular-components-primary-color: oklch(59% 0.15 255.4);
+    --solidjs-modular-components-error-color: oklch(59% 0.17 30);
 
-    --solid-general-components-inverted-text-color: oklch(100% 0 0);
-    --solid-general-components-background-color: oklch(100% 0 0);
-    --solid-general-components-placeholder-text-color: oklch(70% 0 0);
+    --solidjs-modular-components-inverted-text-color: oklch(100% 0 0);
+    --solidjs-modular-components-background-color: oklch(100% 0 0);
+    --solidjs-modular-components-placeholder-text-color: oklch(70% 0 0);
   }
 }

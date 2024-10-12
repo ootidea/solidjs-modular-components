@@ -1,14 +1,14 @@
-@layer solid-general-components {
-  .solid-general-components-Spinner_root {
+@layer solidjs-modular-components {
+  .solidjs-modular-components-Spinner_root {
     display: inline-block;
-    width: var(--solid-general-components-Spinner_size);
-    height: var(--solid-general-components-Spinner_size);
+    width: var(--solidjs-modular-components-Spinner_size);
+    height: var(--solidjs-modular-components-Spinner_size);
     transform-origin: center;
-    animation: rotation var(--solid-general-components-Spinner_period) infinite linear;
-    background-image: conic-gradient(transparent, transparent, var(--solid-general-components-Spinner_color));
-    color: var(--solid-general-components-Spinner_color);
+    animation: rotation var(--solidjs-modular-components-Spinner_period) infinite linear;
+    background-image: conic-gradient(transparent, transparent, var(--solidjs-modular-components-Spinner_color));
+    color: var(--solidjs-modular-components-Spinner_color);
     vertical-align: top;
-    mask: var(--solid-general-components-Spinner_svg-url) no-repeat center;
+    mask: var(--solidjs-modular-components-Spinner_svg-url) no-repeat center;
     mask-size: contain;
   }
 

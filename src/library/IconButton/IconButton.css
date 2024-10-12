@@ -1,5 +1,5 @@
-@layer solid-general-components {
-  .solid-general-components-IconButton_root {
+@layer solidjs-modular-components {
+  .solidjs-modular-components-IconButton_root {
     box-sizing: border-box;
     width: max-content;
     height: max-content;

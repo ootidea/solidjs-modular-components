@@ -27,12 +27,12 @@ export function Spinner(rawProps: SpinnerProps) {
 
   return (
     <div
-      class="solid-general-components-Spinner_root"
+      class="solidjs-modular-components-Spinner_root"
       style={{
-        '--solid-general-components-Spinner_size': props.size,
-        '--solid-general-components-Spinner_svg-url': svgUrl.value,
-        '--solid-general-components-Spinner_period': `${60 / props.rpm}s`,
-        '--solid-general-components-Spinner_color': props.color,
+        '--solidjs-modular-components-Spinner_size': props.size,
+        '--solidjs-modular-components-Spinner_svg-url': svgUrl.value,
+        '--solidjs-modular-components-Spinner_period': `${60 / props.rpm}s`,
+        '--solidjs-modular-components-Spinner_color': props.color,
       }}
       role="img"
     />

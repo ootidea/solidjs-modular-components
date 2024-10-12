@@ -16,11 +16,11 @@ export function Button(rawProps: ButtonProps) {
   })
   return (
     <button
-      class="solid-general-components-Button_root"
+      class="solidjs-modular-components-Button_root"
       type="button"
       disabled={props.disabled}
       style={{
-        '--solid-general-components-Button-button-color': RESERVED_COLOR_MAP[props.color],
+        '--solidjs-modular-components-Button-button-color': RESERVED_COLOR_MAP[props.color],
       }}
       onClick={props.onClick}
     >

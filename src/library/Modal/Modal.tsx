@@ -21,7 +21,7 @@ export function Modal(props: ModalProps) {
       {props?.trigger?.(() => dialogElement?.showModal())}
 
       <dialog
-        class="solid-general-components-Modal_root"
+        class="solidjs-modular-components-Modal_root"
         ref={dialogElement}
         onClick={(event) => {
           const { left, right, top, bottom } = event.target.getBoundingClientRect()
@@ -30,15 +30,15 @@ export function Modal(props: ModalProps) {
           }
         }}
       >
-        <div class="solid-general-components-Modal_titleBar">
+        <div class="solidjs-modular-components-Modal_titleBar">
           {props.title ? (
-            <h2 class="solid-general-components-Modal_title">{props.title}</h2>
+            <h2 class="solidjs-modular-components-Modal_title">{props.title}</h2>
           ) : (
             <div aria-hidden="true" />
           )}
           {props.showCloseButton ? (
             <IconButton
-              class="solid-general-components-Modal_closeButton"
+              class="solidjs-modular-components-Modal_closeButton"
               aria-label="Close modal dialog"
               onClick={closeModal}
             >

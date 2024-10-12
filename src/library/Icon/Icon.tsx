@@ -11,11 +11,11 @@ export type IconProps = Props<{
 export function Icon(props: IconProps) {
   return (
     <div
-      class="solid-general-components-Icon_root"
+      class="solidjs-modular-components-Icon_root"
       style={{
-        '--solid-general-components-Icon_url': `url('${props.url.replaceAll("'", '"')}')`,
-        '--solid-general-components-Icon_size': props.size ?? '1lh',
-        '--solid-general-components-Icon_color': props.color ?? 'currentColor',
+        '--solidjs-modular-components-Icon_url': `url('${props.url.replaceAll("'", '"')}')`,
+        '--solidjs-modular-components-Icon_size': props.size ?? '1lh',
+        '--solidjs-modular-components-Icon_color': props.color ?? 'currentColor',
       }}
       role="img"
     />
