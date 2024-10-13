@@ -10,7 +10,8 @@ export type NumberInputProps = Props<
     nonNegative?: boolean
     maxLength?: number
     'aria-invalid'?: boolean | 'true' | 'false'
-    onChange?: (value: number) => void
+    onInputNumber?: (value: number) => void
+    onChangeNumber?: (value: number) => void
   },
   'input'
 >
@@ -35,6 +36,11 @@ export function NumberInput(props: NumberInputProps) {
     }
     const newCursorPosition = originalCursorPosition - (originalLength - target.value.length)
     target.setSelectionRange(newCursorPosition, newCursorPosition)
+
+    const number = Number(target.value)
+    if (Number.isNaN(number)) {
+      props.onInputNumber?.(number)
+    }
   }
 
   return (
@@ -50,7 +56,7 @@ export function NumberInput(props: NumberInputProps) {
       onChange={({ target }) => {
         const number = Number(target.value)
         if (Number.isNaN(number)) return
-        props.onChange?.(number)
+        props.onChangeNumber?.(number)
       }}
       onInput={onInput}
     />
