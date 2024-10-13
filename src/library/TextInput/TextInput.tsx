@@ -7,7 +7,8 @@ export type TextInputProps = Props<
     value?: string
     placeholder?: string
     'aria-invalid'?: boolean | 'true' | 'false'
-    onChange?: (value: string) => void
+    onInputText?: (value: string) => void
+    onChangeText?: (value: string) => void
   },
   'input'
 >
@@ -21,6 +22,8 @@ export function TextInput(props: TextInputProps) {
 
     const newCursorPosition = originalCursorPosition - (originalLength - target.value.length)
     target.setSelectionRange(newCursorPosition, newCursorPosition)
+
+    props.onInputText?.(target.value)
   }
 
   return (
@@ -30,7 +33,10 @@ export function TextInput(props: TextInputProps) {
       value={props.value ?? ''}
       placeholder={props.placeholder}
       aria-invalid={props['aria-invalid']}
-      onChange={({ target }) => props.onChange?.(target.value)}
+      onChange={(event) => {
+        props.onChangeText?.(event.target.value)
+        if (props.onChange instanceof Function) props.onChange(event)
+      }}
       onInput={onInput}
     />
   )
