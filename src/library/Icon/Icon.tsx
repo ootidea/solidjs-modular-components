@@ -1,6 +1,6 @@
 import './Icon.css'
 import '../common.css'
-import type { CssColor, Props } from '../utilities'
+import { type CssColor, type Props, mergeClass } from '../utilities'
 
 export type IconProps = Props<
   {
@@ -15,7 +15,7 @@ export function Icon(props: IconProps) {
   return (
     <div
       {...props}
-      class="solidjs-modular-components-Icon_root"
+      class={mergeClass('solidjs-modular-components-Icon_root', props)}
       style={{
         '--solidjs-modular-components-Icon_image': `url('${props.src.replaceAll("'", '"')}')`,
         '--solidjs-modular-components-Icon_size': props.size ?? '1lh',

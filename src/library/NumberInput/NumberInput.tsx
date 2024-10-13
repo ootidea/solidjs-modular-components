@@ -1,6 +1,6 @@
 import './NumberInput.css'
 import '../common.css'
-import type { Props } from '../utilities'
+import { type Props, mergeClass } from '../utilities'
 
 export type NumberInputProps = Props<
   {
@@ -46,7 +46,7 @@ export function NumberInput(props: NumberInputProps) {
   return (
     <input
       {...props}
-      class="solidjs-modular-components-NumberInput_root"
+      class={mergeClass('solidjs-modular-components-NumberInput_root', props)}
       type="text"
       inputmode="numeric"
       value={props.value ?? ''}

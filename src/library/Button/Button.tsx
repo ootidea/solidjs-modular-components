@@ -1,6 +1,6 @@
 import './Button.css'
 import '../common.css'
-import { type Props, RESERVED_COLOR_MAP, setDefaultProps } from '../utilities'
+import { type Props, RESERVED_COLOR_MAP, mergeClass, setDefaultProps } from '../utilities'
 
 export type ButtonProps = Props<
   {
@@ -16,9 +16,9 @@ export function Button(rawProps: ButtonProps) {
   })
   return (
     <button
-      class="solidjs-modular-components-Button_root"
+      {...props}
+      class={mergeClass('solidjs-modular-components-Button_root', props)}
       type={props.type ?? 'button'}
-      disabled={props.disabled}
       style={{
         '--solidjs-modular-components-Button-button-color': RESERVED_COLOR_MAP[props.color],
       }}

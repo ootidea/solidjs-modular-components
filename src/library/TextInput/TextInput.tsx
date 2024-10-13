@@ -1,6 +1,6 @@
 import './TextInput.css'
 import '../common.css'
-import type { Props } from '../utilities'
+import { type Props, mergeClass } from '../utilities'
 
 export type TextInputProps = Props<
   {
@@ -26,7 +26,7 @@ export function TextInput(props: TextInputProps) {
   return (
     <input
       {...props}
-      class="solidjs-modular-components-TextInput_root"
+      class={mergeClass('solidjs-modular-components-TextInput_root', props)}
       value={props.value ?? ''}
       placeholder={props.placeholder}
       aria-invalid={props['aria-invalid']}

@@ -1,4 +1,4 @@
-import { type CssColor, type Props, setDefaultProps } from '../utilities'
+import { type CssColor, type Props, mergeClass, setDefaultProps } from '../utilities'
 import './Spinner.css'
 import '../common.css'
 import { createMemo } from 'solid-js'
@@ -31,7 +31,7 @@ export function Spinner(rawProps: SpinnerProps) {
   return (
     <div
       {...props}
-      class="solidjs-modular-components-Spinner_root"
+      class={mergeClass('solidjs-modular-components-Spinner_root', props)}
       style={{
         '--solidjs-modular-components-Spinner_size': props.size,
         '--solidjs-modular-components-Spinner_svg-url': svgUrl(),
