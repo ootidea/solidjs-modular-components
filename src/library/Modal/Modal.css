@@ -13,7 +13,7 @@
     border: unset;
     border-radius: 0.4em;
     background-color: var(--solidjs-modular-components-background-color);
-    box-shadow: 0 2px 5px oklch(0% 0 0 / 20%);
+    box-shadow: 0 4px 16px oklch(0% 0 0 / 15%);
     color: unset;
     inset: 0;
     
@@ -24,7 +24,7 @@
     &,
     &::backdrop {
       transition-property: opacity, overlay, display;
-      transition-duration: 300ms;
+      transition-duration: 200ms;
       opacity: 0;
       transition-behavior: allow-discrete;
     }
@@ -64,7 +64,8 @@
   }
   
   .solidjs-modular-components-Modal_closeButton {
-    margin-left: auto;
+    justify-self: end;
+    margin: 0.1lh;
     color: oklch(45% 0 0);
   }
 }
